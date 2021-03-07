@@ -1,0 +1,2 @@
+com/maxkorte/GGT/AppTest.java
+ com.maxkorte.GGT.AppTest
