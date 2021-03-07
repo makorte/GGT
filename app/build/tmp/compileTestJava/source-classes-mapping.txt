@@ -1,2 +1,2 @@
-com/maxkorte/GGT/AppTest.java
- com.maxkorte.GGT.AppTest
+com/maxkorte/GGTTest.java
+ com.maxkorte.GGTTest

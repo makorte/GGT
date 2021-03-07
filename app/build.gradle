@@ -14,14 +14,14 @@ dependencies {
 }
 
 application {
-    mainClass = 'com.maxkorte.GGT.App'
+    mainClass = 'com.maxkorte.GGT'
 }
 
 java {
     jar {
         manifest {
             attributes (
-                    'Main-Class': 'com.maxkorte.GGT.App'
+                    'Main-Class': 'com.maxkorte.GGT'
             )
         }
     }

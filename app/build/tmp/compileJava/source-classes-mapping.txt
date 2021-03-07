@@ -1,2 +1,2 @@
-com/maxkorte/GGT/App.java
- com.maxkorte.GGT.App
+com/maxkorte/GGT.java
+ com.maxkorte.GGT
