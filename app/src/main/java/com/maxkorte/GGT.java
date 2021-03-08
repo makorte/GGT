@@ -5,14 +5,23 @@ package com.maxkorte;
 
 public class GGT {
     public static void main(String[] args) {
-        try{
+        try {
             System.out.println(getGGT(Integer.parseInt(args[0]), Integer.parseInt(args[1])));
-        } catch(Exception e){
-            System.out.println("fehlerhafte Eingabe!");
+        } catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Es müssen 2 Parameter angegeben werden!");
         }
+        catch (NumberFormatException e){
+            System.out.println("fehlerhafte Eingabe!");
+        } catch (IllegalArgumentException e){
+            e.printStackTrace();
+        }
+
     }
 
-    public static int getGGT(int a, int b){
+    public static int getGGT(int a, int b) {
+        if (a == 0 && b == 0) throw new IllegalArgumentException("Nur eine der beiden Zahlen darf 0 sein!");
+        if (a < 0 || b < 0) throw new IllegalArgumentException("Die Zahlen dürfen nicht kleiner als 0 sein!");
+
         if (a == 0) return b;
         while (b != 0){
             if (a > b) a -= b;
