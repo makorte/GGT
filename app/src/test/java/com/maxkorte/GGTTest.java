@@ -23,5 +23,6 @@ public class GGTTest {
         assertEquals(25, GGT.getGGT(25, 50));
         assertEquals(3, GGT.getGGT(9, 6));
         assertEquals(27, GGT.getGGT(27, 27));
+        assertEquals(1, GGT.getGGT(5, 3));
     }
 }
